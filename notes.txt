@@ -1,0 +1,10 @@
+CNN - Convolution Neural Network
+--------------------------------
+Input (Image/Text Matrix) -> Convolution -> Convolutional Layer (Convolution [Filter] Matrix is applied to input, sum of the products of each element) -> Pooling -> Pooling Layer (Find Max Value over a fixed NxN matrix) ->  Flattening (Turn matrix into an array and feed into FNN) -> Feedforward Neural Network
+
+Word Embedding
+--------------
+One-hot encoding: Vocabulary of Size N, Each Word is a vector of size N with 1 indicating word is present in dictionary
+Word Embedding: Decrease word vector size (for instance, N ~= 100,000 -> 64 going from 0/1 to real number space) and each entry shall encode a relation between other words
+Skip-Gram Model:
+Input One-Hot Encoding -> Embedding Matrix -> Hidden N-Dimension Vector -> Context Matrix -> Output Softmax Vector
